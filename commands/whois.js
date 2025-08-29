@@ -15,6 +15,7 @@
 */
 
 const {SlashCommandBuilder} = require("discord.js") // Class used to create slash commands
+const {MySQL} = require("mysql") // Module for interacting with the database
 
 module.exports = {
 	data: new SlashCommandBuilder() // Set data related to how the command will register
