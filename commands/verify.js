@@ -18,11 +18,11 @@ const {SlashCommandBuilder} = require("discord.js") // Class used to create slas
 
 module.exports = {
 	data: new SlashCommandBuilder() // Set data related to how the command will register
-		.setName("ping")
+		.setName("verify")
 		.setDescription("No description yet."),
 
 	// This is the function that will be called when the command is ran
 	async execute(interaction) {
-		await interaction.reply("Pong!") // Do literally the only thing this command is supposed to do
+		
 	}
 }

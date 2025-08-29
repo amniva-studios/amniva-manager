@@ -1,2 +1,5 @@
 # File containing the bot token
 /token.json
+
+# Roblox API keys for Amniva Studios
+/roblox-keys.json
