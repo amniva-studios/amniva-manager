@@ -10,7 +10,7 @@
 	▒██████▒▒▒ ▓███▀ ░ ▒▀█░  ░██▓ ▒██▒░██████▒▓█   ▓██▒░▒████▒
 	
 	This file is part of the Amniva Manager Discord bot owned and maintained by Scvrlae (@datonescvrlae).
-	It is private and not available for use by anyone else!
+	It is a public resource that can be used for learning!
 
 */
 

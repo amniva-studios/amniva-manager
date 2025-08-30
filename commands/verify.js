@@ -10,11 +10,12 @@
 	▒██████▒▒▒ ▓███▀ ░ ▒▀█░  ░██▓ ▒██▒░██████▒▓█   ▓██▒░▒████▒
 	
 	This file is part of the Amniva Manager Discord bot owned and maintained by Scvrlae (@datonescvrlae).
-	It is private and not available for use by anyone else!
+	It is a public resource that can be used for learning!
 
 */
 
 const {SlashCommandBuilder} = require("discord.js") // Class used to create slash commands
+const Database = require("../database")
 
 module.exports = {
 	data: new SlashCommandBuilder() // Set data related to how the command will register
