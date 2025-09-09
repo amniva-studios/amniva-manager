@@ -1,3 +1,6 @@
 # File containing the bot token and file with secret Roblox API keys
 /token.json
 /roblox-keys.json
+
+# Credentials used for database connections
+/db-creds.json
