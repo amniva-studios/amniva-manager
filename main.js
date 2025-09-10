@@ -42,7 +42,7 @@ function onStart() {
 }
 
 client.on(Events.InteractionCreate, async interaction => {
-	if (!interaction.isChatInputCommand()) return null // Not every interaction is a command so check for that
+	if (!interaction.isChatInputCommand()) return // Not every interaction is a command so check for that
 
 	const command = client.commands.get(interaction.commandName)
 
