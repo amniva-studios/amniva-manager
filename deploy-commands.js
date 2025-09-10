@@ -16,7 +16,7 @@
 
 const {REST, Routes} = require("discord.js") // Classes used for slash command registration
 const {Token} = require("./token.json")
-const {AppId, GuildId} = require("./config.json") // Global configuration variables
+const {AppId, GuildIds} = require("./config.json") // Global configuration variables
 
 const fs = require("node:fs")
 const path = require("node:path") // Module for joining directory paths that I didn't know existed lol
