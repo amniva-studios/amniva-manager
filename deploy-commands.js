@@ -37,12 +37,14 @@ async function onStart() {
               jsonCommands.push(command.data.toJSON()) // Store jsonified command data
        }
 
-       // Using the routes module register all of our slash commands to the specified guild
+       for (guildId of GuildIds) {
+       // Using the routes module register all of our slash commands to all registered guilds
        // It's faster than doing it globally and this bot is private so *shrug*
-       try {
-              await rest.put(Routes.applicationGuildCommands(AppId, GuildId), {body: jsonCommands})
-       } catch(error) {
-              console.error(error) // Make sure to log any errors that occur during this process
+              try {
+                     await rest.put(Routes.applicationGuildCommands(AppId, guildId), {body: jsonCommands})
+              } catch(error) {
+                     console.error(error) // Make sure to log any errors that occur during this process
+              }
        }
 
        console.log("Successfully deployed the bot's slash commands!")
