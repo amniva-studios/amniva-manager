@@ -45,7 +45,7 @@ async function onStart() {
               console.error(error) // Make sure to log any errors that occur during this process
        }
 
-       console.log("Successfully refreshed the bot's slash commands!")
+       console.log("Successfully deployed the bot's slash commands!")
 }
 
 onStart() // Run the start function
