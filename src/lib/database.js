@@ -14,16 +14,16 @@
 
 */
 
-const {SlashCommandBuilder} = require("discord.js") // Class used to create slash commands
-const Database = require("../database")
+const {Hostname, User, Password, Name} = require("../json/db-creds.json") // Credentials for database connection
+const MySQL = require("mysql") // Module for interacting with SQL databases
 
 module.exports = {
-	data: new SlashCommandBuilder() // Set data related to how the command will register
-		.setName("verify")
-		.setDescription("No description yet."),
+	// This function allows the bot to send a query to its database
+	// It abstracts some annoying connection code and makes sure only SELECT and INSERT queries are allowed
+	async query(queryStr) {
+		const creds = {host: Hostname, user: User, password: Password, database: Name}
+		const connection = MySQL.createConnection(creds) // Create a new connections with the database
 
-	// This is the function that will be called when the command is ran
-	async execute(interaction) {
 		
 	}
 }

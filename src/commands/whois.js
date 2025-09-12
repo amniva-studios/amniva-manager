@@ -14,4 +14,25 @@
 
 */
 
-const MySQL = require("mysql") // Module used to communicate with SQL databases
+const {SlashCommandBuilder} = require("discord.js") // Class used to create slash commands
+const Database = require("../lib/database")
+
+module.exports = {
+	data: new SlashCommandBuilder() // Set data related to how the command will register
+		.setName("whois")
+		.setDescription("No description yet.")
+
+	// The Discord user we wanna fetch relevant Roblox data of
+	// We'll use the UserId of this person to get the connected Roblox UserId
+	.addUserOption(option => option
+		.setName("user")
+		.setDescription("The user to fetch Roblox data from.")
+
+		.setRequired(true)
+	),
+
+	// This is the function that will be called when the command is ran
+	async execute(interaction) {
+		const user = interaction.options.getUser("user")
+	}
+}
