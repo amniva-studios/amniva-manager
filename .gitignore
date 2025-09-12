@@ -1,6 +1,2 @@
-# File containing the bot token and file with secret Roblox API keys
-/src/json/token.json
-/src/json/roblox-keys.json
-
-# Credentials used for database connections
-/src/json/db-creds.json
+# Ignore all secret json files containing sensitive data
+src/json/secret/*
