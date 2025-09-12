@@ -14,7 +14,7 @@
 
 */
 
-const {Hostname, User, Password, Name} = require("../json/db-creds.json") // Credentials for database connection
+const {Hostname, User, Password, Name} = require("../json/secret/db-creds.json") // Credentials for database connection
 const MySQL = require("mysql") // Module for interacting with SQL databases
 
 module.exports = {
