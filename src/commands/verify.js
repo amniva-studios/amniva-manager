@@ -17,13 +17,15 @@
 const {SlashCommandBuilder} = require("discord.js") // Class used to create slash commands
 const Database = require("../lib/database")
 
+async function execute(interaction) {
+	
+}
+
 module.exports = {
 	data: new SlashCommandBuilder() // Set data related to how the command will register
 		.setName("verify")
 		.setDescription("No description yet."),
 
 	// This is the function that will be called when the command is ran
-	async execute(interaction) {
-		
-	}
+	execute: execute
 }
